@@ -1,6 +1,6 @@
 #lang racket
 
-(require "../racket-slack-api/slack-api/main.rkt")
+(require "racket-slack-api/slack-api/main.rkt")
 
 (display "Please enter authentication token: ")
 (define token (read-line (current-input-port)))
