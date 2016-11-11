@@ -1,0 +1,3 @@
+[submodule "racket-slack-api"]
+	path = racket-slack-api
+	url = https://github.com/octotep/racket-slack-api

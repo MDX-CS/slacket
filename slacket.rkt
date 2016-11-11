@@ -1,6 +1,6 @@
 #lang racket
 
-(require "../racket-slack-api/slack-api/main.rkt")
+(require "racket-slack-api/slack-api/main.rkt")
 (require racket/date)
 
 (display "Please enter authentication token: ")
