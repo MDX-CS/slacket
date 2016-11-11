@@ -16,7 +16,7 @@
 (define find-bwv (prepare pgc "SELECT bwv FROM cantata_day WHERE day = $1"))
 (define find-name (prepare pgc "SELECT name FROM cantatas WHERE bwv = $1"))
 
-(exit-handler (lambda (x) (rtm-close! conn)))
+(exit-handler (lambda (x) (rtm-close! conn) (disconnect pgc)))
 
 (define (is-leap-year? year)
   (cond
